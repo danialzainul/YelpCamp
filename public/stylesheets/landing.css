@@ -1,0 +1,90 @@
+body {
+    background-color: #000;
+}
+
+#landing-header {
+    /* a webpage is 3 dimensional, x y z axis */
+    /* z index brings forward the object, brings it to the front layer */
+    z-index: 1;
+    position: relative; /* used together with z index */
+    text-align: center;
+    padding-top: 40vh; /* vh is view height. To vertically center our div */
+}
+
+#landing-header h1 {
+    color: #fff;
+    text-shadow: 1px 1px #000;
+}
+
+.slideshow {
+    position: fixed;
+    width: 100%; /* width & height 100% to take up an entire page */
+    height: 100%;
+    top: 0; /* set it to top left */
+    left: 0;
+    z-index: 0; /* behind landing-header div */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.slideshow li {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover; /* allows the background image to take up the entire page */
+    background-position: 50% 50%; /* centers the images on the page */
+    background-repeat: no-repeat;
+    opacity: 0;
+    z-index: 0;
+    animation: imageAnimation 50s linear infinite; /* allows images to fade in and out */
+}
+
+.slideshow li:nth-child(1) { 
+  background-image: url(http://i.imgur.com/K3mPv14.jpg) 
+}
+.slideshow li:nth-child(2) { 
+  background-image: url(http://i.imgur.com/SBEmFpv.jpg);
+  animation-delay: 10s; 
+}
+.slideshow li:nth-child(3) { 
+  background-image: url(http://i.imgur.com/emvhOnb.jpg);
+  animation-delay: 20s; 
+}
+.slideshow li:nth-child(4) { 
+  background-image: url(http://i.imgur.com/2LSMCmJ.jpg);
+  animation-delay: 30s; 
+}
+.slideshow li:nth-child(5) { 
+  background-image: url(http://i.imgur.com/TVGe0Ef.jpg);
+  animation-delay: 40s; 
+}
+
+@keyframes imageAnimation { 
+  0% { 
+    opacity: 0; 
+    animation-timing-function: ease-in;
+  }
+  10% {
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+  20% {
+    opacity: 1
+  }
+  30% {
+    opacity: 0
+  }
+}
+
+/* Older browser support - .no-cssanimations class added by modernizr */
+.no-cssanimations .slideshow li {
+	opacity: 1;
+}
+
+/* reference 
+https://github.com/nax3t/background-slider
+https://tympanus.net/codrops/2012/01/02/fullscreen-background-image-slideshow-with-css3/
+*/
