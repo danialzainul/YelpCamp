@@ -110,4 +110,8 @@ Comment Destroy Route: /campgrounds/:id/comments/:comment_id
 * Update models, views and routes
 
 # Install Moment JS
-* Time since created for comments
+* Time since created for campgrounds and comments
+
+# Adding collapsible comment section using jQuery
+* Add or edit comment on the campgrounds show page
+* refer https://github.com/fewsion/yelp-camp-refactored/blob/master/readme.md
