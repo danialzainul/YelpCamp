@@ -98,3 +98,16 @@ Comment Destroy Route: /campgrounds/:id/comments/:comment_id
 * Add bootstrap alerts to header
 
 # Set up separate Development(local) & Production(online) Database
+
+# Updating Login and Signup page
+# Updating Navbar for mobile responsive
+
+# Adding Google Maps
+* Sign up for Google Developer account
+* Get Google Maps API key
+* Get Geocoding API key and enable it
+* Add Google Maps scripts to application
+* Update models, views and routes
+
+# Install Moment JS
+* Time since created for comments
