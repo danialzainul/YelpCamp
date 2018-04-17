@@ -96,3 +96,5 @@ Comment Destroy Route: /campgrounds/:id/comments/:comment_id
 # Adding in Flash!
 * Install and configure connect-flash
 * Add bootstrap alerts to header
+
+# Set up separate Development(local) & Production(online) Database
