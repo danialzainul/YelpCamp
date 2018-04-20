@@ -19,3 +19,7 @@
     height: 400px;
     width: 100%;
 }
+
+.glyphicon {
+    line-height: 1.45;
+}
